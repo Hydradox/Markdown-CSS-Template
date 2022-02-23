@@ -3,13 +3,12 @@
     --bgTableEven: #213149;
     --bgCodeColor: #1b304e;
     --bgBlockquote: #2a3f5f31;
-
     --borderBlockquote: #3e6daf;
 
     --txtColor: #ffffff;
     --linkColor: #2dc4ff;
     
-    /* Generic and JS */
+    /* Code syntax highlighting */
     --codeComment: #9b9b9b;
     --codeString: #9aff71;
     --codeParams: #a077ff;
@@ -18,6 +17,7 @@
     --codeVar: #ffe882;
     --codeProperty: #ff7070;
     --codeLiteral: #ff9f44;
+    --codeClass: #9aff71;
 
     /* Shell */
     --codeBuiltIn: #77fc5d;
@@ -27,10 +27,7 @@
     --codeTag: #ff79e2;
     --codeMeta: #ffab5c;
 
-    /* C++ */
-    --codeClass: #9aff71;
-
-    --underlineColor: #8b8b8b;
+    --hrColor: #8b8b8b;
 }
 
 
@@ -48,15 +45,6 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: var(--linkColor);
-}
-
-hr, p {
-    margin: 10px 0;
-}
-
 
 
 /**
@@ -67,6 +55,19 @@ hr, p {
     padding:  15px 30px;
 }
 
+/* Links */
+.md a {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+/* Extra margins */
+hr, p {
+    margin: 10px 0;
+}
+
+
+/* Padding for headings */
 .md h1, .md h2,
 .md h3, .md h4,
 .md h5, .md h6 {
@@ -84,7 +85,7 @@ hr, p {
 
     margin-top: 5px;
 
-    background-color: var(--underlineColor);
+    background-color: var(--hrColor);
 }
 
 

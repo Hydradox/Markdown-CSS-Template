@@ -1,12 +1,18 @@
----
-__Advertisement :)__
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+# Usage
 
-You will like those projects!
+```sh
+# Download the repository
+git clone https://github.com/Hydradox/Markdown-CSS-Template.git
+
+# Navigate to the directory and download dependencies
+npm install
+
+# Start the server on port 3000
+npm test
+```
+
+<sub>Everything below this point is a sequence of Markdown items to test out the CSS</sub>
 
 ---
 
