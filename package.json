@@ -1,0 +1,23 @@
+{
+  "name": "markdown-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "JCM",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "highlight.js": "^11.4.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "type": "module"
+}

@@ -1,0 +1,179 @@
+:root {
+    --bgColor: #162233;
+    --bgTableEven: #213149;
+    --bgCodeColor: #1b304e;
+    --bgBlockquote: #2a3f5f31;
+
+    --borderBlockquote: #3e6daf;
+
+    --txtColor: #ffffff;
+    --linkColor: #2dc4ff;
+    
+    /* Generic and JS */
+    --codeComment: #9b9b9b;
+    --codeString: #9aff71;
+    --codeParams: #a077ff;
+    --codeKeyword: #f265ff;
+    --codeFunction: #79b7ff;
+    --codeVar: #ffe882;
+    --codeProperty: #ff7070;
+    --codeLiteral: #ff9f44;
+
+    /* Shell */
+    --codeBuiltIn: #77fc5d;
+
+    /* HTML */
+    --codeName: #ff7676;
+    --codeTag: #ff79e2;
+    --codeMeta: #ffab5c;
+
+    /* C++ */
+    --codeClass: #9aff71;
+
+    --underlineColor: #8b8b8b;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--txtColor);
+
+    font-size: 0.9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+hr, p {
+    margin: 10px 0;
+}
+
+
+
+/**
+ * Markdown styles
+ */
+.md {
+    width: 50%;
+    padding:  15px 30px;
+}
+
+.md h1, .md h2,
+.md h3, .md h4,
+.md h5, .md h6 {
+    padding: 20px 0 15px 0;
+}
+
+/* Underline for headings */
+.md h1::after,
+.md h2::after {
+    content: '';
+    display: block;
+
+    width: 100%;
+    height: .1px;
+
+    margin-top: 5px;
+
+    background-color: var(--underlineColor);
+}
+
+
+/* Lists */
+.md ul,
+.md ol {
+    margin: 10px 0 20px 30px;
+}
+
+.md li {
+    margin: 5px 0;
+}
+
+
+/* Code with syntax highlighting */
+p code {
+    color: var(--codeFunction);
+    background-color: var(--bgTableEven);
+    padding: 0 4px;
+}
+
+.hljs,
+pre {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 10px;
+
+    border-radius: 5px;
+    background-color: var(--bgCodeColor);
+
+    line-height: 1.3em;
+    font-family: 'Oxygen Mono', monospace;
+    white-space: pre-wrap;
+}
+
+.hljs-comment { color: var(--codeComment); }
+.hljs-title { color: var(--codeFunction); }
+.hljs-string { color: var(--codeString); }
+.hljs-params { color: var(--codeParams); }
+.hljs-keyword { color: var(--codeKeyword); }
+.function_ { color: var(--codeFunction); }
+.hljs-variable { color: var(--codeVar); }
+.hljs-property { color: var(--codeProperty); }
+.hljs-literal, .hljs-number { color: var(--codeLiteral); }
+
+.hljs-built_in { color: var(--codeBuiltIn); }
+
+.hljs-name { color: var(--codeName); }
+.hljs-tag { color: var(--codeTag); }
+.hljs-meta { color: var(--codeMeta); }
+
+.class_ { color: var(--codeClass); }
+.hljs-type { color: var(--codeVar); }
+
+
+
+/* Tables */
+.md table,
+.md thead {
+    border-collapse: collapse;
+}
+
+.md th,
+.md td {
+    border: 1px solid var(--txtColor);
+    padding: 7px 5px;
+}
+
+.md table {
+    width: 100%;
+    margin: 10px 0 20px;
+}
+
+.md table tbody tr:nth-child(even) {
+    background-color: var(--bgTableEven);
+}
+
+
+
+/* Blockquotes */
+.md blockquote {
+    background-color: var(--bgBlockquote);
+    border-left: 5px solid var(--borderBlockquote);
+    padding: 5px 0 5px 15px;
+    margin: 5px 0;
+}
+
+
+/* Images */
+.md p img {
+    max-width: 40%;
+}
